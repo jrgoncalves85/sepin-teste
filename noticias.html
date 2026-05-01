@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias – SEPIN Itapira</title>
+  <meta name="description" content="Acompanhe as ações, eventos, projetos e conquistas do SEPIN — Serviço de Proteção à Infância e Adolescência de Itapira.">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-2222222');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-111111111"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-111111111');
+  </script>
+  <!-- End Google Analytics 4 -->
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '33333333');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=33333333&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/noticias.css">
+
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-2222222"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" role="banner">
+    <div class="header__container">
+      <a href="./index.html" class="header__logo">
+        <img
+          src="./images/logo.png"
+          alt="SEPIN – Serviço de Proteção à Infância e Adolescência de Itapira"
+          width="160"
+          height="64"
+        />
+      </a>
+
+      <button class="header__menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="header__nav" id="main-nav" role="navigation" aria-label="Menu principal">
+        <ul class="header__nav-list">
+          <li><a href="./index.html" class="header__nav-link">Início</a></li>
+          <li><a href="./index.html#projetos" class="header__nav-link">Projetos</a></li>
+          <li><a href="./noticias.html" class="header__nav-link header__nav-link--active">Notícias</a></li>
+          <li><a href="./index.html#quem-somos" class="header__nav-link">Quem Somos</a></li>
+          <li><a href="./index.html#contato" class="header__nav-link">Contato</a></li>
+          <li><a href="./index.html#apoie" class="header__nav-link btn-primary">Apoie o SEPIN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero" aria-label="Cabeçalho da página">
+      <div class="page-hero__container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="./index.html" class="breadcrumb__link">Início</a></li>
+            <li class="breadcrumb__separator" aria-hidden="true"><i data-lucide="chevron-right"></i></li>
+            <li class="breadcrumb__item breadcrumb__item--current" aria-current="page">Notícias</li>
+          </ol>
+        </nav>
+        <h1 class="page-hero__title">O SEPIN em ação.</h1>
+        <p class="page-hero__subtitle">Acompanhe nossas ações, eventos e conquistas. Cada notícia é uma prova do impacto que geramos juntos.</p>
+      </div>
+    </section>
+
+    <!-- ===================== FILTROS ===================== -->
+    <section class="filtros" aria-label="Filtrar notícias">
+      <div class="filtros__container">
+        <div class="filtros__group" role="group" aria-label="Categorias">
+          <button class="filtros__btn filtros__btn--active" data-filter="all">Todas</button>
+          <button class="filtros__btn" data-filter="educacao">Educação</button>
+          <button class="filtros__btn" data-filter="comunidade">Comunidade</button>
+          <button class="filtros__btn" data-filter="parcerias">Parcerias</button>
+          <button class="filtros__btn" data-filter="eventos">Eventos</button>
+          <button class="filtros__btn" data-filter="projetos">Projetos</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NOTÍCIA DESTAQUE ===================== -->
+    <section class="noticias-page" aria-labelledby="noticias-page-titulo">
+      <div class="noticias-page__container">
+
+        <article class="noticia-destaque" aria-label="Notícia em destaque">
+          <div class="noticia-destaque__image-wrapper">
+            <img
+              src="./images/image-09.jpg"
+              alt="Crianças participando de atividades educativas no SEPIN"
+              width="800"
+              height="480"
+              loading="eager"
+              class="noticia-destaque__image"
+            />
+            <span class="noticia-destaque__badge">Destaque</span>
+          </div>
+          <div class="noticia-destaque__content">
+            <div class="noticia-destaque__meta">
+              <span class="noticia__tag noticia__tag--educacao">Educação</span>
+              <time class="noticia__date" datetime="2025-04-10">
+                <i data-lucide="calendar"></i>
+                10 de abril de 2025
+              </time>
+            </div>
+            <h2 class="noticia-destaque__title">SEPIN amplia programas educativos e atinge recorde de atendimentos em 2025</h2>
+            <p class="noticia-destaque__excerpt">
+              Com a expansão dos grupos de leitura e do acompanhamento educacional, o SEPIN registrou seu maior número de crianças atendidas desde a fundação — reafirmando o compromisso com a educação gratuita em Itapira.
+            </p>
+            <a href="#" class="btn-primary noticia-destaque__cta">
+              Ler notícia completa
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- ===================== GRID DE NOTÍCIAS ===================== -->
+        <div class="noticias-grid" id="noticias-page-titulo">
+
+          <article class="noticia-card" data-category="comunidade">
+            <a href="#" class="noticia-card__link">
+              <div class="noticia-card__image-wrapper">
+                <img src="./images/image-10.jpg" alt="Evento comunitário do SEPIN" width="400" height="240" loading="lazy" class="noticia-card__image" />
+              </div>
+              <div class="noticia-card__body">
+                <div class="noticia-card__meta">
+                  <span class="noticia__tag noticia__tag--comunidade">Comunidade</span>
+                  <time class="noticia__date" datetime="2025-03-22">
+                    <i data-lucide="calendar"></i>
+                    22 de março de 2025
+                  </time>
+                </div>
+                <h3 class="noticia-card__title">Festa de encerramento reúne mais de 200 famílias no SEPIN</h3>
+                <p class="noticia-card__excerpt">O evento celebrou as conquistas do primeiro trimestre e fortaleceu os laços entre as famílias atendidas e a equipe.</p>
+                <span class="noticia-card__readmore">Ler mais <i data-lucide="arrow-right"></i></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="noticia-card" data-category="parcerias">
+            <a href="#" class="noticia-card__link">
+              <div class="noticia-card__image-wrapper">
+                <img src="./images/image-01.jpg" alt="Parceria institucional do SEPIN" width="400" height="240" loading="lazy" class="noticia-card__image" />
+              </div>
+              <div class="noticia-card__body">
+                <div class="noticia-card__meta">
+                  <span class="noticia__tag noticia__tag--parcerias">Parcerias</span>
+                  <time class="noticia__date" datetime="2025-03-05">
+                    <i data-lucide="calendar"></i>
+                    5 de março de 2025
+                  </time>
+                </div>
+                <h3 class="noticia-card__title">SEPIN firma nova parceria com a Prefeitura de Itapira para 2025</h3>
+                <p class="noticia-card__excerpt">Acordo garante recursos para expansão dos programas de esporte e cultura para mais crianças no próximo semestre.</p>
+                <span class="noticia-card__readmore">Ler mais <i data-lucide="arrow-right"></i></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="noticia-card" data-category="projetos">
+            <a href="#" class="noticia-card__link">
+              <div class="noticia-card__image-wrapper">
+                <img src="./images/image-05.jpg" alt="Projeto de ballet no SEPIN" width="400" height="240" loading="lazy" class="noticia-card__image" />
+              </div>
+              <div class="noticia-card__body">
+                <div class="noticia-card__meta">
+                  <span class="noticia__tag noticia__tag--projetos">Projetos</span>
+                  <time class="noticia__date" datetime="2025-02-18">
+                    <i data-lucide="calendar"></i>
+                    18 de fevereiro de 2025
+                  </time>
+                </div>
+                <h3 class="noticia-card__title">Ballet Clássico – Cidadançania abre novas vagas para 2025</h3>
+                <p class="noticia-card__excerpt">O projeto que une expressão cultural e desenvolvimento pessoal começa novo ciclo com turmas para crianças de 6 a 14 anos.</p>
+                <span class="noticia-card__readmore">Ler mais <i data-lucide="arrow-right"></i></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="noticia-card" data-category="projetos">
+            <a href="#" class="noticia-card__link">
+              <div class="noticia-card__image-wrapper">
+                <img src="./images/image-07.jpg" alt="Projeto de Taekwondo no SEPIN" width="400" height="240" loading="lazy" class="noticia-card__image" />
+              </div>
+              <div class="noticia-card__body">
+                <div class="noticia-card__meta">
+                  <span class="noticia__tag noticia__tag--projetos">Projetos</span>
+                  <time class="noticia__date" datetime="2025-02-05">
+                    <i data-lucide="calendar"></i>
+                    5 de fevereiro de 2025
+                  </time>
+                </div>
+                <h3 class="noticia-card__title">Taekwondo leva 3 atletas do SEPIN ao campeonato regional</h3>
+                <p class="noticia-card__excerpt">Crianças atendidas pelo programa Educação e Progresso representam Itapira em competição estadual pela primeira vez.</p>
+                <span class="noticia-card__readmore">Ler mais <i data-lucide="arrow-right"></i></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="noticia-card" data-category="eventos">
+            <a href="#" class="noticia-card__link">
+              <div class="noticia-card__image-wrapper">
+                <img src="./images/image-04.jpg" alt="Evento cultural do SEPIN" width="400" height="240" loading="lazy" class="noticia-card__image" />
+              </div>
+              <div class="noticia-card__body">
+                <div class="noticia-card__meta">
+                  <span class="noticia__tag noticia__tag--eventos">Eventos</span>
+                  <time class="noticia__date" datetime="2025-01-20">
+                    <i data-lucide="calendar"></i>
+                    20 de janeiro de 2025
+                  </time>
+                </div>
+                <h3 class="noticia-card__title">Mostra Cultural reúne produções de crianças e famílias</h3>
+                <p class="noticia-card__excerpt">Apresentações de música, dança e artesanato mostram o talento das crianças atendidas e celebram a diversidade cultural.</p>
+                <span class="noticia-card__readmore">Ler mais <i data-lucide="arrow-right"></i></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="noticia-card" data-category="educacao">
+            <a href="#" class="noticia-card__link">
+              <div class="noticia-card__image-wrapper">
+                <img src="./images/image-03.jpg" alt="Atividade de leitura no SEPIN" width="400" height="240" loading="lazy" class="noticia-card__image" />
+              </div>
+              <div class="noticia-card__body">
+                <div class="noticia-card__meta">
+                  <span class="noticia__tag noticia__tag--educacao">Educação</span>
+                  <time class="noticia__date" datetime="2025-01-08">
+                    <i data-lucide="calendar"></i>
+                    8 de janeiro de 2025
+                  </time>
+                </div>
+                <h3 class="noticia-card__title">Grupo de leitura completa 100 livros em 12 meses</h3>
+                <p class="noticia-card__excerpt">Meta histórica do programa de fortalecimento afetivo e leitura é celebrada com cerimônia especial para as crianças participantes.</p>
+                <span class="noticia-card__readmore">Ler mais <i data-lucide="arrow-right"></i></span>
+              </div>
+            </a>
+          </article>
+
+        </div>
+
+        <!-- Paginação -->
+        <nav class="paginacao" aria-label="Paginação das notícias">
+          <button class="paginacao__btn paginacao__btn--prev" aria-label="Página anterior" disabled>
+            <i data-lucide="chevron-left"></i>
+          </button>
+          <button class="paginacao__btn paginacao__btn--num paginacao__btn--active" aria-current="page">1</button>
+          <button class="paginacao__btn paginacao__btn--num">2</button>
+          <button class="paginacao__btn paginacao__btn--num">3</button>
+          <button class="paginacao__btn paginacao__btn--next" aria-label="Próxima página">
+            <i data-lucide="chevron-right"></i>
+          </button>
+        </nav>
+
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="cta-final" aria-labelledby="cta-final-noticias">
+      <div class="cta-final__container">
+        <h2 class="cta-final__title" id="cta-final-noticias">Toda criança merece uma chance.</h2>
+        <p class="cta-final__text">O SEPIN existe para garantir isso. Junte-se a nós.</p>
+        <a href="./index.html#contato" class="btn-cta-final">
+          Quero ajudar agora
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+
+    <div class="footer__top">
+      <div class="footer__top-inner">
+        <div class="footer__brand">
+          <a href="./index.html" class="footer__logo-link">
+            <img
+              src="./images/logo.png"
+              alt="SEPIN – Serviço de Proteção à Infância e Adolescência de Itapira"
+              width="140"
+              height="56"
+              loading="lazy"
+            />
+          </a>
+          <p class="footer__tagline">Transformando vidas em Itapira desde 1965.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/sepinitapira" class="footer__social-link" aria-label="Instagram do SEPIN" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/SepinItapira" class="footer__social-link" aria-label="Facebook do SEPIN" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="facebook"></i>
+            </a>
+            <a href="https://wa.me/554444444444" class="footer__social-link footer__social-link--whatsapp" aria-label="WhatsApp do SEPIN" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="message-circle"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__contact">
+          <h3 class="footer__col-title">Contato</h3>
+          <ul class="footer__contact-list">
+            <li class="footer__contact-item">
+              <i data-lucide="map-pin"></i>
+              <span>Rua Guanabara, 121 – Vila Ilze<br>Itapira / SP</span>
+            </li>
+            <li class="footer__contact-item">
+              <i data-lucide="phone"></i>
+              <span>(44) 44444-4444</span>
+            </li>
+            <li class="footer__contact-item">
+              <i data-lucide="globe"></i>
+              <a href="https://www.sepindeitapira.com.br" class="footer__contact-link" target="_blank" rel="noopener noreferrer">www.sepindeitapira.com.br</a>
+            </li>
+            <li class="footer__contact-item">
+              <i data-lucide="instagram"></i>
+              <a href="https://www.instagram.com/sepinitapira" class="footer__contact-link" target="_blank" rel="noopener noreferrer">@sepinitapira</a>
+            </li>
+            <li class="footer__contact-item">
+              <i data-lucide="facebook"></i>
+              <a href="https://www.facebook.com/SepinItapira" class="footer__contact-link" target="_blank" rel="noopener noreferrer">SepinItapira</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__about">
+          <h3 class="footer__col-title">Sobre o SEPIN</h3>
+          <p class="footer__about-text">
+            O SEPIN cuida do desenvolvimento de crianças e adolescentes com programas gratuitos de educação, cultura e esporte.
+          </p>
+          <a href="./index.html#apoie" class="footer__cta btn-primary">
+            Apoie o SEPIN →
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__bottom-inner">
+        <p class="footer__copyright">
+          © 2025 SEPIN – Serviço de Proteção à Infância e Adolescência de Itapira. Todos os direitos reservados.
+        </p>
+        <p class="footer__legal">
+          CNPJ: —&nbsp;&nbsp;|&nbsp;&nbsp;Entidade sem fins lucrativos
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a
+    href="https://wa.me/554444444444"
+    class="whatsapp-float"
+    aria-label="Fale conosco pelo WhatsApp"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i data-lucide="message-circle"></i>
+  </a>
+
+  <script src="./assets/main.js" defer></script>
+  <script src="./assets/noticias.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      lucide.createIcons();
+    });
+  </script>
+
+</body>
+</html>
