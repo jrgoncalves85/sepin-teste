@@ -64,8 +64,8 @@
         <img
           src="./images/logo.png"
           alt="SEPIN – Serviço de Proteção à Infância e Adolescência de Itapira"
-          width="120"
-          height="48"
+          width="160"
+          height="64"
         />
       </a>
 
@@ -226,11 +226,8 @@
 
           <div class="programas__grid">
             <img src="./images/image-02.jpg" alt="Atividade de arte e recreação no SEPIN" width="400" height="300" loading="lazy" class="programas__grid-img" />
-            <img src="./images/image-03.jpg" alt="Atividade musical no SEPIN" width="400" height="300" loading="lazy" class="programas__grid-img" />
             <img src="./images/image-04.jpg" alt="Atividade de leitura no SEPIN" width="400" height="300" loading="lazy" class="programas__grid-img" />
-            <img src="./images/image-05.jpg" alt="Artesanato e habilidades manuais no SEPIN" width="400" height="300" loading="lazy" class="programas__grid-img" />
             <img src="./images/image-06.jpg" alt="Esporte e educação no SEPIN" width="400" height="300" loading="lazy" class="programas__grid-img" />
-            <img src="./images/image-07.jpg" alt="Grupo de reflexão e cidadania no SEPIN" width="400" height="300" loading="lazy" class="programas__grid-img" />
           </div>
 
         </div>
@@ -316,6 +313,7 @@
             <div class="noticias__card-body">
               <span class="noticias__card-tag">Educação</span>
               <h3 class="noticias__card-title">Atividades educativas</h3>
+              <time class="noticias__card-date" datetime="2025-04-10">10 de abril de 2025</time>
             </div>
           </article>
 
@@ -333,6 +331,7 @@
             <div class="noticias__card-body">
               <span class="noticias__card-tag">Comunidade</span>
               <h3 class="noticias__card-title">Eventos comunitários</h3>
+              <time class="noticias__card-date" datetime="2025-03-22">22 de março de 2025</time>
             </div>
           </article>
 
@@ -350,6 +349,7 @@
             <div class="noticias__card-body">
               <span class="noticias__card-tag">Parcerias</span>
               <h3 class="noticias__card-title">Parcerias</h3>
+              <time class="noticias__card-date" datetime="2025-03-05">5 de março de 2025</time>
             </div>
           </article>
 
@@ -434,73 +434,98 @@
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer" role="contentinfo">
-    <div class="footer__container">
 
-      <div class="footer__brand">
-        <a href="#inicio" class="footer__logo-link">
-          <img
-            src="./images/logo.png"
-            alt="SEPIN – Serviço de Proteção à Infância e Adolescência de Itapira"
-            width="100"
-            height="40"
-            loading="lazy"
-          />
-        </a>
-        <p class="footer__brand-text">
-          O SEPIN é uma organização dedicada à proteção e desenvolvimento de crianças e adolescentes
-          em Itapira, promovendo inclusão social, educação e cidadania há mais de 50 anos.
-        </p>
-        <div class="footer__social">
-          <a href="https://www.instagram.com/sepinitapira" class="footer__social-link" aria-label="Instagram do SEPIN" target="_blank" rel="noopener noreferrer">
-            <i data-lucide="instagram"></i>
+    <div class="footer__top">
+      <div class="footer__top-inner">
+        <div class="footer__brand">
+          <a href="#inicio" class="footer__logo-link">
+            <img
+              src="./images/logo.png"
+              alt="SEPIN – Serviço de Proteção à Infância e Adolescência de Itapira"
+              width="140"
+              height="56"
+              loading="lazy"
+            />
           </a>
-          <a href="https://www.facebook.com/SepinItapira" class="footer__social-link" aria-label="Facebook do SEPIN" target="_blank" rel="noopener noreferrer">
-            <i data-lucide="facebook"></i>
+          <p class="footer__tagline">Transformando vidas com educação e cidadania desde 1965.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/sepinitapira" class="footer__social-link" aria-label="Instagram do SEPIN" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/SepinItapira" class="footer__social-link" aria-label="Facebook do SEPIN" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="facebook"></i>
+            </a>
+            <a href="https://wa.me/554444444444" class="footer__social-link footer__social-link--whatsapp" aria-label="WhatsApp do SEPIN" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="message-circle"></i>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer__nav" aria-label="Links do rodapé">
+          <h3 class="footer__col-title">Navegação</h3>
+          <ul class="footer__nav-list">
+            <li><a href="#inicio" class="footer__nav-link"><i data-lucide="chevron-right"></i> Início</a></li>
+            <li><a href="#quem-somos" class="footer__nav-link"><i data-lucide="chevron-right"></i> Quem Somos</a></li>
+            <li><a href="#projetos" class="footer__nav-link"><i data-lucide="chevron-right"></i> Projetos</a></li>
+            <li><a href="#noticias" class="footer__nav-link"><i data-lucide="chevron-right"></i> Notícias</a></li>
+            <li><a href="#transparencia" class="footer__nav-link"><i data-lucide="chevron-right"></i> Transparência</a></li>
+            <li><a href="#ouvidoria" class="footer__nav-link"><i data-lucide="chevron-right"></i> Ouvidoria</a></li>
+            <li><a href="#contato" class="footer__nav-link"><i data-lucide="chevron-right"></i> Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact">
+          <h3 class="footer__col-title">Contato</h3>
+          <ul class="footer__contact-list">
+            <li class="footer__contact-item">
+              <i data-lucide="map-pin"></i>
+              <span>Rua Guanabara, 121 – Vila Ilze<br>Itapira / SP</span>
+            </li>
+            <li class="footer__contact-item">
+              <i data-lucide="phone"></i>
+              <span>(44) 44444-4444</span>
+            </li>
+            <li class="footer__contact-item">
+              <i data-lucide="globe"></i>
+              <a href="https://www.sepindeitapira.com.br" class="footer__contact-link" target="_blank" rel="noopener noreferrer">www.sepindeitapira.com.br</a>
+            </li>
+            <li class="footer__contact-item">
+              <i data-lucide="instagram"></i>
+              <a href="https://www.instagram.com/sepinitapira" class="footer__contact-link" target="_blank" rel="noopener noreferrer">@sepinitapira</a>
+            </li>
+            <li class="footer__contact-item">
+              <i data-lucide="facebook"></i>
+              <a href="https://www.facebook.com/SepinItapira" class="footer__contact-link" target="_blank" rel="noopener noreferrer">SepinItapira</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__about">
+          <h3 class="footer__col-title">Sobre o SEPIN</h3>
+          <p class="footer__about-text">
+            O SEPIN é uma organização sem fins lucrativos dedicada à proteção e desenvolvimento
+            de crianças e adolescentes em Itapira, promovendo inclusão social, educação e
+            cidadania há mais de 50 anos.
+          </p>
+          <a href="#contato" class="footer__cta btn-primary">
+            Fale conosco
+            <i data-lucide="arrow-right"></i>
           </a>
         </div>
       </div>
-
-      <nav class="footer__nav" aria-label="Links do rodapé">
-        <h3 class="footer__nav-title">Links</h3>
-        <ul class="footer__nav-list">
-          <li><a href="#quem-somos" class="footer__nav-link">Quem Somos</a></li>
-          <li><a href="#projetos" class="footer__nav-link">Projetos</a></li>
-          <li><a href="#noticias" class="footer__nav-link">Notícias</a></li>
-          <li><a href="#transparencia" class="footer__nav-link">Transparência</a></li>
-          <li><a href="#ouvidoria" class="footer__nav-link">Ouvidoria</a></li>
-          <li><a href="#contato" class="footer__nav-link">Contato</a></li>
-        </ul>
-      </nav>
-
-      <div class="footer__contact">
-        <h3 class="footer__contact-title">Contato</h3>
-        <ul class="footer__contact-list">
-          <li class="footer__contact-item">
-            <i data-lucide="map-pin"></i>
-            <span>Rua Guanabara, 121 – Vila Ilze – Itapira/SP</span>
-          </li>
-          <li class="footer__contact-item">
-            <i data-lucide="globe"></i>
-            <span>www.sepindeitapira.com.br</span>
-          </li>
-          <li class="footer__contact-item">
-            <i data-lucide="instagram"></i>
-            <span>@sepinitapira</span>
-          </li>
-          <li class="footer__contact-item">
-            <i data-lucide="facebook"></i>
-            <span>SepinItapira</span>
-          </li>
-        </ul>
-      </div>
-
     </div>
 
     <div class="footer__bottom">
-      <p class="footer__copyright">
-        SEPIN – Serviço de Proteção à Infância e Adolescência de Itapira © Todos os direitos reservados.
-      </p>
+      <div class="footer__bottom-inner">
+        <p class="footer__copyright">
+          © 2025 SEPIN – Serviço de Proteção à Infância e Adolescência de Itapira. Todos os direitos reservados.
+        </p>
+        <p class="footer__legal">
+          CNPJ: —&nbsp;&nbsp;|&nbsp;&nbsp;Entidade sem fins lucrativos
+        </p>
+      </div>
     </div>
+
   </footer>
 
   <!-- WhatsApp Float -->
