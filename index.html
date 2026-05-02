@@ -3,428 +3,368 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEPIN – Serviço de Proteção à Infância e Adolescência de Itapira</title>
-  <meta name="description" content="O SEPIN é uma organização sem fins lucrativos que atua em Itapira desde 1965, promovendo educação, cidadania e desenvolvimento integral para crianças e adolescentes.">
-
+  <title>SEPIN Itapira — Serviço de Proteção à Infância e à Adolescência</title>
+  <meta name="description" content="O SEPIN atua em Itapira desde 1965, oferecendo atendimento gratuito para crianças, adolescentes e famílias em situação de vulnerabilidade social.">
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-2222222');</script>
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
   <!-- End Google Tag Manager -->
 
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-111111111"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-111111111');
+    gtag('config', 'G-XXXXXXXXXX');
   </script>
-  <!-- End Google Analytics 4 -->
+  <!-- End Google Analytics -->
 
   <!-- Meta Pixel -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '33333333');
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '123456789012345');
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=33333333&ev=PageView&noscript=1"
-  /></noscript>
+    src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"/></noscript>
   <!-- End Meta Pixel -->
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./assets/style.css">
-
-  <script src="https://unpkg.com/lucide@latest" defer></script>
 </head>
 <body>
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-2222222"
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- ===================== HEADER ===================== -->
-  <header class="header" role="banner">
+  <!-- HEADER -->
+  <header class="header" id="header">
     <div class="header__container">
-      <a href="#inicio" class="header__logo">
-        <img
-          src="./images/logo.png"
-          alt="SEPIN – Serviço de Proteção à Infância e Adolescência de Itapira"
-          width="160"
-          height="64"
-        />
+      <a href="/" class="header__logo">
+        <img src="./images/logo-sepin-reduzido.png" alt="SEPIN Itapira" width="120" height="48">
       </a>
-
-      <button class="header__menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
-        <i data-lucide="menu"></i>
-      </button>
-
-      <nav class="header__nav" id="main-nav" role="navigation" aria-label="Menu principal">
+      <nav class="header__nav" id="header-nav" aria-label="Menu principal">
         <ul class="header__nav-list">
-          <li><a href="#inicio" class="header__nav-link">Início</a></li>
-          <li><a href="#projetos" class="header__nav-link">Projetos</a></li>
-          <li><a href="#noticias" class="header__nav-link">Notícias</a></li>
-          <li><a href="#quem-somos" class="header__nav-link">Quem Somos</a></li>
-          <li><a href="#transparencia" class="header__nav-link">Transparência</a></li>
-          <li><a href="#ouvidoria" class="header__nav-link">Ouvidoria</a></li>
-          <li><a href="#contato" class="header__nav-link btn-primary">Contato</a></li>
+          <li><a href="/" class="header__nav-link header__nav-link--active">Home</a></li>
+          <li><a href="/quem-somos.html" class="header__nav-link">Quem Somos</a></li>
+          <li><a href="/projetos.html" class="header__nav-link">Projetos</a></li>
+          <li><a href="/noticias.html" class="header__nav-link">Notícias</a></li>
+          <li><a href="/transparencia.html" class="header__nav-link">Transparência</a></li>
+          <li><a href="/como-ajudar.html" class="header__nav-link">Como Ajudar</a></li>
+          <li><a href="/contato.html" class="header__nav-link">Contato</a></li>
         </ul>
       </nav>
+      <button class="header__menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="header-nav">
+        <i data-lucide="menu"></i>
+      </button>
     </div>
   </header>
 
   <main>
 
-    <!-- ===================== HERO ===================== -->
-    <section class="hero" id="inicio" aria-label="Apresentação">
-      <div class="hero__media">
-        <img
-          src="./images/hero_image.jpg"
-          alt="Crianças em atividade educativa no SEPIN"
-          width="1440"
-          height="720"
-          class="hero__image"
-        />
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero__background">
+        <img src="./images/hero_image.jpg" alt="" width="1440" height="720" aria-hidden="true" fetchpriority="high">
         <div class="hero__overlay"></div>
       </div>
-      <div class="hero__content">
-        <h1 class="hero__title">Transformando vidas com educação e cidadania</h1>
-        <a href="#projetos" class="btn-primary hero__cta">
-          Conheça nossos projetos
-          <i data-lucide="arrow-right"></i>
+      <div class="hero__container">
+        <img src="./images/logo-sepin.png" alt="SEPIN — Serviço de Proteção à Infância e à Adolescência de Itapira" class="hero__logo" width="280" height="140">
+        <h1 class="hero__title">60 anos transformando a infância em Itapira</h1>
+        <a href="/como-ajudar.html" class="btn-primary hero__cta">
+          Quero ajudar o SEPIN <i data-lucide="arrow-right"></i>
         </a>
       </div>
     </section>
 
-    <!-- ===================== SOBRE O SEPIN ===================== -->
-    <section class="sobre" id="quem-somos" aria-labelledby="sobre-titulo">
-      <div class="sobre__container">
-        <div class="sobre__image-wrapper">
-          <img
-            src="./images/image-01.jpg"
-            alt="Atividade institucional do SEPIN com crianças"
-            width="560"
-            height="420"
-            loading="lazy"
-            class="sobre__image"
-          />
+    <!-- PROVA SOCIAL — IMPACT BAR -->
+    <section class="impact-bar" aria-label="Números de impacto">
+      <div class="impact-bar__container">
+        <div class="impact-bar__item">
+          <span class="impact-bar__number">60+</span>
+          <span class="impact-bar__label">anos de atuação</span>
         </div>
-        <div class="sobre__content">
-          <h2 class="sobre__title" id="sobre-titulo">Quem Somos</h2>
-          <p class="sobre__text">
-            Organização sem fins lucrativos que atua em Itapira desde 1965, desenvolvendo o
-            <strong>Serviço de Convivência e Fortalecimento de Vínculos</strong> para crianças e
-            adolescentes de <strong>4 a 14 anos</strong>, com foco em desenvolvimento integral e
-            proteção social.
-          </p>
-          <ul class="sobre__highlights">
-            <li class="sobre__highlight-item">
-              <i data-lucide="heart-handshake"></i>
-              <span>Atendimento gratuito</span>
-            </li>
-            <li class="sobre__highlight-item">
-              <i data-lucide="calendar-check"></i>
-              <span>+50 anos de atuação</span>
-            </li>
-            <li class="sobre__highlight-item">
-              <i data-lucide="graduation-cap"></i>
-              <span>Foco em educação e cidadania</span>
-            </li>
-          </ul>
-          <a href="#quem-somos" class="btn-secondary sobre__cta">
-            Saiba mais
-            <i data-lucide="arrow-right"></i>
-          </a>
+        <div class="impact-bar__item">
+          <span class="impact-bar__number">500+</span>
+          <span class="impact-bar__label">crianças atendidas por ano</span>
+        </div>
+        <div class="impact-bar__item">
+          <span class="impact-bar__number">100%</span>
+          <span class="impact-bar__label">gratuito para famílias</span>
+        </div>
+        <div class="impact-bar__item">
+          <span class="impact-bar__number">Itapira / SP</span>
+          <span class="impact-bar__label">desde 1965</span>
         </div>
       </div>
     </section>
 
-    <!-- ===================== MISSÃO, VISÃO E VALORES ===================== -->
-    <section class="missao" id="missao" aria-labelledby="missao-titulo">
-      <div class="missao__container">
-        <h2 class="missao__title" id="missao-titulo">Nosso compromisso</h2>
-        <div class="missao__cards">
+    <!-- QUEM SOMOS -->
+    <section class="quem-somos secao" id="quem-somos">
+      <div class="quem-somos__container">
+        <div class="quem-somos__content">
+          <h2 class="quem-somos__title">Quem Somos</h2>
+          <p class="quem-somos__text">O SEPIN é uma organização da sociedade civil que atua em Itapira desde 1965, oferecendo atendimento gratuito para crianças, adolescentes e suas famílias em situação de vulnerabilidade social.</p>
+          <ul class="quem-somos__list">
+            <li class="quem-somos__list-item">
+              <i data-lucide="check-circle"></i>
+              Atendimento gratuito para famílias
+            </li>
+            <li class="quem-somos__list-item">
+              <i data-lucide="check-circle"></i>
+              +60 anos de história em Itapira
+            </li>
+            <li class="quem-somos__list-item">
+              <i data-lucide="check-circle"></i>
+              Foco em educação, cultura e esporte
+            </li>
+          </ul>
+          <a href="/quem-somos.html" class="btn-primary">Conheça nossa história <i data-lucide="arrow-right"></i></a>
+        </div>
+        <div class="quem-somos__image">
+          <img src="./images/image-01.jpg" alt="Atividade institucional do SEPIN com crianças" width="560" height="420" loading="lazy">
+        </div>
+      </div>
+    </section>
 
+    <!-- MISSÃO, VISÃO E VALORES -->
+    <section class="missao secao-alt" id="missao">
+      <div class="missao__container">
+        <h2 class="missao__title">Nosso compromisso</h2>
+        <div class="missao__grid">
           <div class="missao__card">
             <div class="missao__card-icon">
               <i data-lucide="target"></i>
             </div>
             <h3 class="missao__card-title">Missão</h3>
-            <p class="missao__card-text">
-              A missão da entidade Serviço de Proteção à Infância e à Adolescência de Itapira envolve
-              garantir os direitos das crianças e adolescentes, promovendo sua proteção e
-              desenvolvimento integral.
-            </p>
+            <p class="missao__card-text">A missão da entidade Serviço de Proteção à Infância e à Adolescência de Itapira envolve garantir os direitos das crianças e adolescentes, promovendo sua proteção e desenvolvimento integral.</p>
           </div>
-
           <div class="missao__card">
             <div class="missao__card-icon">
               <i data-lucide="eye"></i>
             </div>
             <h3 class="missao__card-title">Visão</h3>
-            <p class="missao__card-text">
-              A visão do Serviço de Proteção à Infância e à Adolescência de Itapira é a de um futuro
-              em que todas as crianças e adolescentes possam viver com dignidade, ter seus direitos
-              respeitados e acessar oportunidades para um desenvolvimento pleno e saudável.
-            </p>
+            <p class="missao__card-text">A visão do Serviço de Proteção à Infância e à Adolescência de Itapira é a de um futuro em que todas as crianças e adolescentes possam viver com dignidade, ter seus direitos respeitados e acessar oportunidades para um desenvolvimento pleno e saudável.</p>
           </div>
-
           <div class="missao__card">
             <div class="missao__card-icon">
-              <i data-lucide="star"></i>
+              <i data-lucide="heart"></i>
             </div>
             <h3 class="missao__card-title">Valores</h3>
-            <ul class="missao__values-list">
-              <li><i data-lucide="check"></i> Respeito</li>
-              <li><i data-lucide="check"></i> Solidariedade</li>
-              <li><i data-lucide="check"></i> Transparência</li>
-              <li><i data-lucide="check"></i> Empatia</li>
-              <li><i data-lucide="check"></i> Responsabilidade</li>
-            </ul>
+            <p class="missao__card-text">Respeito, Solidariedade, Transparência, Empatia, Responsabilidade</p>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ===================== PROGRAMAS SOCIOEDUCATIVOS ===================== -->
-    <section class="programas" id="projetos" aria-labelledby="programas-titulo">
-      <div class="programas__container">
-
-        <div class="programas__header">
-          <h2 class="programas__title" id="programas-titulo">O que fazemos</h2>
-          <p class="programas__subtitle">
-            Programas que fortalecem vínculos, incentivam a educação e desenvolvem habilidades sociais.
-          </p>
-        </div>
-
-        <div class="programas__body">
-
-          <ul class="programas__list">
-            <li class="programas__list-item"><i data-lucide="palette"></i> Arte, recreação e atividades lúdicas</li>
-            <li class="programas__list-item"><i data-lucide="music"></i> Música e expressão cultural</li>
-            <li class="programas__list-item"><i data-lucide="book-open"></i> Leitura e fortalecimento afetivo</li>
-            <li class="programas__list-item"><i data-lucide="scissors"></i> Artesanato e desenvolvimento de habilidades</li>
-            <li class="programas__list-item"><i data-lucide="trophy"></i> Esporte e educação</li>
-            <li class="programas__list-item"><i data-lucide="users"></i> Grupos de reflexão e cidadania</li>
-            <li class="programas__list-item"><i data-lucide="book-marked"></i> Acompanhamento educacional</li>
-          </ul>
-
-          <div class="programas__grid">
-            <img src="./images/image-02.jpg" alt="Atividade de arte e recreação no SEPIN" width="400" height="300" loading="lazy" class="programas__grid-img" />
-            <img src="./images/image-04.jpg" alt="Atividade de leitura no SEPIN" width="400" height="300" loading="lazy" class="programas__grid-img" />
-            <img src="./images/image-06.jpg" alt="Esporte e educação no SEPIN" width="400" height="300" loading="lazy" class="programas__grid-img" />
+    <!-- PROJETOS -->
+    <section class="projetos secao" id="projetos">
+      <div class="projetos__container">
+        <h2 class="projetos__title">Nossos Projetos</h2>
+        <p class="projetos__intro">Programas que fortalecem vínculos, incentivam a educação e desenvolvem habilidades sociais.</p>
+        <div class="projetos__grid">
+          <div class="projetos__card">
+            <div class="projetos__card-icon" aria-hidden="true">🎨</div>
+            <h3 class="projetos__card-title">Arte e Ação</h3>
+            <p class="projetos__card-desc">Atividades em espaços lúdicos e criativos</p>
+            <p class="projetos__card-benefit">Estimula expressão e convivência</p>
           </div>
-
-        </div>
-
-        <div class="programas__destaques">
-          <div class="programas__destaque-card">
-            <h3 class="programas__destaque-title">Taekwondo – Educação e Progresso</h3>
-            <p class="programas__destaque-text">disciplina, respeito e superação</p>
+          <div class="projetos__card">
+            <div class="projetos__card-icon" aria-hidden="true">🎵</div>
+            <h3 class="projetos__card-title">Viva Música</h3>
+            <p class="projetos__card-desc">Vivência musical no cotidiano</p>
+            <p class="projetos__card-benefit">Desenvolve sensibilidade e cultura</p>
           </div>
-          <div class="programas__destaque-card">
-            <h3 class="programas__destaque-title">Ballet Clássico – Cidadançania</h3>
-            <p class="programas__destaque-text">expressão cultural e desenvolvimento pessoal</p>
+          <div class="projetos__card">
+            <div class="projetos__card-icon" aria-hidden="true">📖</div>
+            <h3 class="projetos__card-title">Roda de Prosa</h3>
+            <p class="projetos__card-desc">Leitura e interação em grupo</p>
+            <p class="projetos__card-benefit">Fortalece vínculos e aprendizado</p>
+          </div>
+          <div class="projetos__card">
+            <div class="projetos__card-icon" aria-hidden="true">✂️</div>
+            <h3 class="projetos__card-title">Artesanato</h3>
+            <p class="projetos__card-desc">Atividades manuais e criativas</p>
+            <p class="projetos__card-benefit">Desenvolve habilidades e autoestima</p>
+          </div>
+          <div class="projetos__card">
+            <div class="projetos__card-icon" aria-hidden="true">🏆</div>
+            <h3 class="projetos__card-title">Esporte-Educação</h3>
+            <p class="projetos__card-desc">Atividades físicas e recreativas</p>
+            <p class="projetos__card-benefit">Estimula disciplina e cooperação</p>
+          </div>
+          <div class="projetos__card">
+            <div class="projetos__card-icon" aria-hidden="true">👥</div>
+            <h3 class="projetos__card-title">Grupo de Reflexão</h3>
+            <p class="projetos__card-desc">Encontros com orientação técnica</p>
+            <p class="projetos__card-benefit">Promove cidadania e consciência</p>
           </div>
         </div>
-
-        <div class="programas__cta-wrapper">
-          <a href="#projetos" class="btn-primary">
-            Ver todos os projetos
-            <i data-lucide="arrow-right"></i>
-          </a>
+        <div class="projetos__destaques">
+          <div class="projetos__destaque">
+            <img src="./images/image-02.jpg" alt="Taekwondo — Educação e Progresso no SEPIN" width="560" height="360" loading="lazy">
+            <div class="projetos__destaque-content">
+              <h3 class="projetos__destaque-title">Taekwondo – Educação e Progresso</h3>
+              <p class="projetos__destaque-text">disciplina, respeito e superação</p>
+            </div>
+          </div>
+          <div class="projetos__destaque">
+            <img src="./images/image-03.jpg" alt="Ballet Clássico — Cidadançania no SEPIN" width="560" height="360" loading="lazy">
+            <div class="projetos__destaque-content">
+              <h3 class="projetos__destaque-title">Ballet Clássico – Cidadançania</h3>
+              <p class="projetos__destaque-text">expressão cultural e desenvolvimento pessoal</p>
+            </div>
+          </div>
         </div>
-
+        <div class="projetos__cta">
+          <a href="/projetos.html" class="btn-primary">Ver todos os projetos <i data-lucide="arrow-right"></i></a>
+        </div>
       </div>
     </section>
 
-    <!-- ===================== ATUAÇÃO COM FAMÍLIAS ===================== -->
-    <section class="familias" id="familias" aria-labelledby="familias-titulo">
+    <!-- ATUAÇÃO COM FAMÍLIAS -->
+    <section class="familias secao-alt" id="familias">
       <div class="familias__container">
+        <div class="familias__image">
+          <img src="./images/image-04.jpg" alt="Atendimento a famílias pelo SEPIN" width="560" height="420" loading="lazy">
+        </div>
         <div class="familias__content">
-          <h2 class="familias__title" id="familias-titulo">Apoio às famílias</h2>
-          <p class="familias__text">
-            Atuação integrada com o CRAS e rede de proteção, oferecendo orientação e fortalecimento
-            dos vínculos familiares.
-          </p>
-          <ul class="familias__highlights">
-            <li class="familias__highlight-item">
-              <i data-lucide="users-round"></i>
-              <span>Encontros com responsáveis</span>
+          <h2 class="familias__title">Cuidando também das famílias</h2>
+          <p class="familias__text">O SEPIN atua em conjunto com a rede de proteção social, oferecendo acolhimento, orientação e encaminhamentos para as famílias atendidas.</p>
+          <ul class="familias__list">
+            <li class="familias__list-item">
+              <i data-lucide="check-circle"></i>
+              Acolhimento e orientação técnica
             </li>
-            <li class="familias__highlight-item">
-              <i data-lucide="message-circle"></i>
-              <span>Orientações sociais</span>
+            <li class="familias__list-item">
+              <i data-lucide="check-circle"></i>
+              Encaminhamento à rede de proteção
             </li>
-            <li class="familias__highlight-item">
-              <i data-lucide="arrow-right-circle"></i>
-              <span>Encaminhamentos</span>
+            <li class="familias__list-item">
+              <i data-lucide="check-circle"></i>
+              Fortalecimento de vínculos familiares
             </li>
           </ul>
         </div>
-        <div class="familias__image-wrapper">
-          <img
-            src="./images/image-08.jpg"
-            alt="Atuação do SEPIN com famílias e responsáveis"
-            width="560"
-            height="420"
-            loading="lazy"
-            class="familias__image"
-          />
+      </div>
+    </section>
+
+    <!-- STORYTELLING -->
+    <section class="storytelling secao" id="storytelling">
+      <div class="storytelling__container">
+        <div class="storytelling__image">
+          <img src="./images/image-05.jpg" alt="Criança participante do SEPIN" width="480" height="560" loading="lazy">
+        </div>
+        <div class="storytelling__content">
+          <h2 class="storytelling__title">Uma criança. Uma oportunidade. Uma vida diferente.</h2>
+          <p class="storytelling__text">Ana tinha 7 anos quando entrou no SEPIN. Hoje, aos 14, é monitora voluntária no projeto de ballet. O que começou como uma tarde de atividades tornou-se um caminho de confiança, disciplina e pertencimento.</p>
+          <p class="storytelling__tagline"><em>Esta é a história de centenas de crianças em Itapira.</em></p>
+          <blockquote class="storytelling__quote">
+            <p>"O SEPIN mudou a forma como minha filha se vê no mundo."</p>
+            <cite>— Mãe de participante, Itapira/SP</cite>
+          </blockquote>
         </div>
       </div>
     </section>
 
-    <!-- ===================== NOTÍCIAS ===================== -->
-    <section class="noticias" id="noticias" aria-labelledby="noticias-titulo">
+    <!-- NOTÍCIAS -->
+    <section class="noticias secao-alt" id="noticias">
       <div class="noticias__container">
-        <div class="noticias__header">
-          <h2 class="noticias__title" id="noticias-titulo">Últimas notícias</h2>
-          <p class="noticias__subtitle">Acompanhe nossas ações, eventos e projetos recentes.</p>
-        </div>
+        <h2 class="noticias__title">Últimas notícias</h2>
+        <p class="noticias__intro">O SEPIN em ação! Acompanhe nossas ações, eventos e projetos recentes.</p>
         <div class="noticias__grid">
-
           <article class="noticias__card">
-            <div class="noticias__card-image-wrapper">
-              <img
-                src="./images/image-09.jpg"
-                alt="Atividades educativas do SEPIN"
-                width="400"
-                height="240"
-                loading="lazy"
-                class="noticias__card-image"
-              />
-            </div>
-            <div class="noticias__card-body">
-              <span class="noticias__card-tag">Educação</span>
-              <h3 class="noticias__card-title">Atividades educativas</h3>
-              <time class="noticias__card-date" datetime="2025-04-10">10 de abril de 2025</time>
+            <img src="./images/image-06.jpg" alt="Atividades educativas do SEPIN" width="400" height="240" loading="lazy">
+            <div class="noticias__card-content">
+              <span class="noticias__card-category">Atividades educativas</span>
+              <h3 class="noticias__card-title">Novidades nas atividades educativas do SEPIN</h3>
+              <time class="noticias__card-date" datetime="2026-04-15">15 de abril de 2026</time>
             </div>
           </article>
-
           <article class="noticias__card">
-            <div class="noticias__card-image-wrapper">
-              <img
-                src="./images/image-10.jpg"
-                alt="Eventos comunitários promovidos pelo SEPIN"
-                width="400"
-                height="240"
-                loading="lazy"
-                class="noticias__card-image"
-              />
-            </div>
-            <div class="noticias__card-body">
-              <span class="noticias__card-tag">Comunidade</span>
-              <h3 class="noticias__card-title">Eventos comunitários</h3>
-              <time class="noticias__card-date" datetime="2025-03-22">22 de março de 2025</time>
+            <img src="./images/image-07.jpg" alt="Evento comunitário do SEPIN" width="400" height="240" loading="lazy">
+            <div class="noticias__card-content">
+              <span class="noticias__card-category">Eventos comunitários</span>
+              <h3 class="noticias__card-title">SEPIN realiza evento de integração comunitária</h3>
+              <time class="noticias__card-date" datetime="2026-04-08">8 de abril de 2026</time>
             </div>
           </article>
-
           <article class="noticias__card">
-            <div class="noticias__card-image-wrapper">
-              <img
-                src="./images/image-01.jpg"
-                alt="Parcerias institucionais do SEPIN"
-                width="400"
-                height="240"
-                loading="lazy"
-                class="noticias__card-image"
-              />
-            </div>
-            <div class="noticias__card-body">
-              <span class="noticias__card-tag">Parcerias</span>
-              <h3 class="noticias__card-title">Parcerias</h3>
-              <time class="noticias__card-date" datetime="2025-03-05">5 de março de 2025</time>
+            <img src="./images/image-08.jpg" alt="Parceria institucional do SEPIN" width="400" height="240" loading="lazy">
+            <div class="noticias__card-content">
+              <span class="noticias__card-category">Parcerias</span>
+              <h3 class="noticias__card-title">SEPIN firma nova parceria para ampliar atendimento</h3>
+              <time class="noticias__card-date" datetime="2026-03-28">28 de março de 2026</time>
             </div>
           </article>
-
         </div>
-        <div class="noticias__cta-wrapper">
-          <a href="#noticias" class="btn-secondary">
-            Ver todas
-            <i data-lucide="arrow-right"></i>
-          </a>
+        <div class="noticias__cta">
+          <a href="/noticias.html" class="btn-primary">Ver todas as notícias <i data-lucide="arrow-right"></i></a>
         </div>
       </div>
     </section>
 
-    <!-- ===================== CTA + CONTATO ===================== -->
-    <section class="contato" id="contato" aria-labelledby="contato-titulo">
-      <div class="contato__container">
-        <div class="contato__intro">
-          <h2 class="contato__title" id="contato-titulo">Faça parte dessa transformação</h2>
-          <p class="contato__text">
-            Entre em contato com o SEPIN para saber mais, tirar dúvidas ou descobrir como apoiar
-            nossas iniciativas e contribuir com o futuro de crianças e adolescentes.
-          </p>
+    <!-- APOIE -->
+    <section class="apoie secao-dark" id="apoie">
+      <div class="apoie__container">
+        <h2 class="apoie__title">Você pode fazer parte dessa história.</h2>
+        <p class="apoie__text">Apoie o SEPIN e contribua para o desenvolvimento de crianças e adolescentes em Itapira.</p>
+        <div class="apoie__ctas">
+          <a href="/como-ajudar.html#doacao" class="btn-primary">Fazer uma doação</a>
+          <a href="/como-ajudar.html#voluntario" class="btn-outline-white">Ser voluntário</a>
         </div>
+      </div>
+    </section>
+
+    <!-- PARCEIROS -->
+    <section class="parceiros secao" id="parceiros">
+      <div class="parceiros__container">
+        <h2 class="parceiros__title">Quem acredita e constrói junto com o SEPIN</h2>
+        <div class="parceiros__grid">
+          <div class="parceiros__item">Laboratório Cristália</div>
+          <div class="parceiros__item">Lions Clube de Itapira</div>
+          <div class="parceiros__item">Wizard</div>
+          <div class="parceiros__item">SESI Itapira</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato secao-alt" id="contato">
+      <div class="contato__container">
+        <h2 class="contato__title">Faça parte dessa transformação</h2>
+        <p class="contato__text">Entre em contato com o SEPIN para saber mais, tirar dúvidas, falar com a ouvidoria ou descobrir como apoiar nossas iniciativas.</p>
         <form class="contato__form" action="#" method="post" novalidate>
           <div class="contato__form-group">
-            <label class="contato__label" for="nome">Nome</label>
-            <input
-              class="contato__input"
-              type="text"
-              id="nome"
-              name="nome"
-              placeholder="Seu nome completo"
-              required
-              autocomplete="name"
-            />
+            <label class="contato__form-label" for="nome">Nome</label>
+            <input class="contato__form-input" type="text" id="nome" name="nome" autocomplete="name" required>
           </div>
           <div class="contato__form-group">
-            <label class="contato__label" for="email">E-mail</label>
-            <input
-              class="contato__input"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="seu@email.com"
-              required
-              autocomplete="email"
-            />
+            <label class="contato__form-label" for="email">E-mail</label>
+            <input class="contato__form-input" type="email" id="email" name="email" autocomplete="email" required>
           </div>
           <div class="contato__form-group">
-            <label class="contato__label" for="telefone">Telefone</label>
-            <input
-              class="contato__input"
-              type="tel"
-              id="telefone"
-              name="telefone"
-              placeholder="(19) 99999-9999"
-              autocomplete="tel"
-            />
+            <label class="contato__form-label" for="telefone">Telefone</label>
+            <input class="contato__form-input" type="tel" id="telefone" name="telefone" autocomplete="tel">
           </div>
           <div class="contato__form-group contato__form-group--full">
-            <label class="contato__label" for="mensagem">Mensagem</label>
-            <textarea
-              class="contato__textarea"
-              id="mensagem"
-              name="mensagem"
-              rows="5"
-              placeholder="Escreva sua mensagem..."
-              required
-            ></textarea>
+            <label class="contato__form-label" for="mensagem">Mensagem</label>
+            <textarea class="contato__form-textarea" id="mensagem" name="mensagem" rows="5" required></textarea>
           </div>
           <div class="contato__form-group contato__form-group--full">
-            <button type="submit" class="btn-primary contato__submit">
-              Enviar mensagem
-              <i data-lucide="send"></i>
-            </button>
+            <button type="submit" class="btn-primary contato__form-submit">Enviar mensagem</button>
           </div>
         </form>
       </div>
@@ -432,119 +372,52 @@
 
   </main>
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="footer" role="contentinfo">
-
-    <div class="footer__top">
-      <div class="footer__top-inner">
-        <div class="footer__brand">
-          <a href="#inicio" class="footer__logo-link">
-            <img
-              src="./images/logo.png"
-              alt="SEPIN – Serviço de Proteção à Infância e Adolescência de Itapira"
-              width="140"
-              height="56"
-              loading="lazy"
-            />
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <img src="./images/logo-sepin-reduzido.png" alt="SEPIN Itapira" width="120" height="48" loading="lazy">
+        <p class="footer__brand-text">O SEPIN é uma organização dedicada à proteção e desenvolvimento de crianças e adolescentes em Itapira, promovendo inclusão social, educação e cidadania há mais de 50 anos.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook do SEPIN">
+            <i data-lucide="facebook"></i>
           </a>
-          <p class="footer__tagline">Transformando vidas com educação e cidadania desde 1965.</p>
-          <div class="footer__social">
-            <a href="https://www.instagram.com/sepinitapira" class="footer__social-link" aria-label="Instagram do SEPIN" target="_blank" rel="noopener noreferrer">
-              <i data-lucide="instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/SepinItapira" class="footer__social-link" aria-label="Facebook do SEPIN" target="_blank" rel="noopener noreferrer">
-              <i data-lucide="facebook"></i>
-            </a>
-            <a href="https://wa.me/554444444444" class="footer__social-link footer__social-link--whatsapp" aria-label="WhatsApp do SEPIN" target="_blank" rel="noopener noreferrer">
-              <i data-lucide="message-circle"></i>
-            </a>
-          </div>
-        </div>
-
-        <nav class="footer__nav" aria-label="Links do rodapé">
-          <h3 class="footer__col-title">Navegação</h3>
-          <ul class="footer__nav-list">
-            <li><a href="#inicio" class="footer__nav-link"><i data-lucide="chevron-right"></i> Início</a></li>
-            <li><a href="#quem-somos" class="footer__nav-link"><i data-lucide="chevron-right"></i> Quem Somos</a></li>
-            <li><a href="#projetos" class="footer__nav-link"><i data-lucide="chevron-right"></i> Projetos</a></li>
-            <li><a href="#noticias" class="footer__nav-link"><i data-lucide="chevron-right"></i> Notícias</a></li>
-            <li><a href="#transparencia" class="footer__nav-link"><i data-lucide="chevron-right"></i> Transparência</a></li>
-            <li><a href="#ouvidoria" class="footer__nav-link"><i data-lucide="chevron-right"></i> Ouvidoria</a></li>
-            <li><a href="#contato" class="footer__nav-link"><i data-lucide="chevron-right"></i> Contato</a></li>
-          </ul>
-        </nav>
-
-        <div class="footer__contact">
-          <h3 class="footer__col-title">Contato</h3>
-          <ul class="footer__contact-list">
-            <li class="footer__contact-item">
-              <i data-lucide="map-pin"></i>
-              <span>Rua Guanabara, 121 – Vila Ilze<br>Itapira / SP</span>
-            </li>
-            <li class="footer__contact-item">
-              <i data-lucide="phone"></i>
-              <span>(44) 44444-4444</span>
-            </li>
-            <li class="footer__contact-item">
-              <i data-lucide="globe"></i>
-              <a href="https://www.sepindeitapira.com.br" class="footer__contact-link" target="_blank" rel="noopener noreferrer">www.sepindeitapira.com.br</a>
-            </li>
-            <li class="footer__contact-item">
-              <i data-lucide="instagram"></i>
-              <a href="https://www.instagram.com/sepinitapira" class="footer__contact-link" target="_blank" rel="noopener noreferrer">@sepinitapira</a>
-            </li>
-            <li class="footer__contact-item">
-              <i data-lucide="facebook"></i>
-              <a href="https://www.facebook.com/SepinItapira" class="footer__contact-link" target="_blank" rel="noopener noreferrer">SepinItapira</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__about">
-          <h3 class="footer__col-title">Sobre o SEPIN</h3>
-          <p class="footer__about-text">
-            O SEPIN é uma organização sem fins lucrativos dedicada à proteção e desenvolvimento
-            de crianças e adolescentes em Itapira, promovendo inclusão social, educação e
-            cidadania há mais de 50 anos.
-          </p>
-          <a href="#contato" class="footer__cta btn-primary">
-            Fale conosco
-            <i data-lucide="arrow-right"></i>
+          <a href="#" class="footer__social-link" aria-label="Instagram do SEPIN">
+            <i data-lucide="instagram"></i>
           </a>
         </div>
       </div>
+      <nav class="footer__nav" aria-label="Navegação do rodapé">
+        <ul class="footer__nav-list">
+          <li><a href="/" class="footer__nav-link">Home</a></li>
+          <li><a href="/quem-somos.html" class="footer__nav-link">Quem Somos</a></li>
+          <li><a href="/projetos.html" class="footer__nav-link">Projetos</a></li>
+          <li><a href="/noticias.html" class="footer__nav-link">Notícias</a></li>
+          <li><a href="/transparencia.html" class="footer__nav-link">Transparência</a></li>
+          <li><a href="/como-ajudar.html" class="footer__nav-link">Como Ajudar</a></li>
+          <li><a href="/contato.html" class="footer__nav-link">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <address class="footer__address">
+          <p>Rua Guanabara, 121 – Vila Ilze – Itapira/SP</p>
+          <a href="https://www.sepindeitapira.com.br" class="footer__contact-link" target="_blank" rel="noopener noreferrer">www.sepindeitapira.com.br</a>
+        </address>
+      </div>
     </div>
-
     <div class="footer__bottom">
-      <div class="footer__bottom-inner">
-        <p class="footer__copyright">
-          © 2025 SEPIN – Serviço de Proteção à Infância e Adolescência de Itapira. Todos os direitos reservados.
-        </p>
-        <p class="footer__legal">
-          CNPJ: —&nbsp;&nbsp;|&nbsp;&nbsp;Entidade sem fins lucrativos
-        </p>
-      </div>
+      <p class="footer__copyright">© 2026 SEPIN — Todos os direitos reservados.</p>
+      <p class="footer__credits">Desenvolvido por <a href="https://hiperbytes.com.br" target="_blank" rel="noopener noreferrer">Hiperbytes Agência Web</a> · Hospedado por Hostnet</p>
     </div>
-
   </footer>
 
-  <!-- WhatsApp Float -->
-  <a
-    href="https://wa.me/554444444444"
-    class="whatsapp-float"
-    aria-label="Fale conosco pelo WhatsApp"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5519999999999" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
     <i data-lucide="message-circle"></i>
   </a>
 
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script src="./assets/main.js" defer></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      lucide.createIcons();
-    });
-  </script>
 
 </body>
 </html>
